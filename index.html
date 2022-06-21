@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Stats preview card component</title>
+
+    <meta
+      name="description"
+      content="Frontend Mentor's “Stats preview card component” challenge."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <section class="c-card">
+      <div class="c-card__info">
+        <h1 class="c-card__info-title">
+          Get <span class="c-card__info-title--highlight">insights</span> that
+          help your business grow.
+        </h1>
+        <p class="c-card__info-text">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="c-card__statistics">
+          <div class="c-card__statistics-item">
+            <p class="c-card__statistics-value">10k+</p>
+            <p class="c-card__statistics-label">companies</p>
+          </div>
+          <div class="c-card__statistics-item">
+            <p class="c-card__statistics-value">314</p>
+            <p class="c-card__statistics-label">templates</p>
+          </div>
+          <div class="c-card__statistics-item">
+            <p class="c-card__statistics-value">12M+</p>
+            <p class="c-card__statistics-label">queries</p>
+          </div>
+        </div>
+      </div>
+      <picture class="c-card__container-image">
+        <source
+          srcset="./assets/images/image-header-mobile.jpg"
+          media="(max-width: 768px)"
+          type="image/jpeg"
+        />
+        <img
+          class="c-card__image"
+          src="./assets/images/image-header-desktop.jpg"
+          alt="Photo of the office with people working."
+        />
+      </picture>
+    </section>
+  </body>
+</html>

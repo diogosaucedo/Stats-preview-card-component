@@ -1,0 +1,19 @@
+@use "colors";
+@use "members";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%; // 1rem = 10px
+}
+
+body {
+  @include members.custom-layout(row, center, center);
+
+  min-height: 100vh;
+  background-color: colors.$very-dark-blue;
+  font-family: "Inter", sans-serif;
+}

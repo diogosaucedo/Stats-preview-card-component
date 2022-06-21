@@ -1,0 +1,19 @@
+@use "../../members";
+@use "card-image";
+@use "card-info";
+@use "card-statistics";
+
+.c-card {
+  @include members.custom-layout(row, center, center);
+
+  width: 76.8rem;
+
+  @include card-image.properties();
+  @include card-info.properties();
+  @include card-statistics.properties();
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    width: 37.5rem;
+  }
+}

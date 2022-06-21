@@ -1,0 +1,40 @@
+@use "../../colors";
+@use "../../members";
+
+@mixin properties() {
+  &__statistics {
+    @include members.custom-layout(row, space-between, flex-start);
+
+    width: 25rem;
+    padding: 3rem 0;
+
+    @media (max-width: 768px) {
+      @include members.custom-layout(column, center, center);
+    }
+  }
+  &__statistics-item {
+    @include members.custom-layout(column, center, flex-start);
+
+    @media (max-width: 768px) {
+      @include members.custom-layout(column, center, center);
+      padding: 1rem;
+    }
+  }
+  &__statistics-label {
+    @include members.custom-font(1rem, 400, colors.$slightly-transparent-white);
+    letter-spacing: 0.11rem;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+  &__statistics-value {
+    @include members.custom-font(1.8rem, 700, colors.$white);
+
+    @media (max-width: 768px) {
+      font-size: 2.6rem;
+    }
+  }
+}
